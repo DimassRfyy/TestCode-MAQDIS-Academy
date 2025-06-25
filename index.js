@@ -30,6 +30,14 @@ app.post('/data', (req, res) => {
   });
 });
 
+// Endpoint POST /hapus
+app.post('/hapus', (req, res) => {
+  res.json({
+    data: 0,
+    status: 'berhasil hapus'
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server berjalan di http://localhost:${port}`);
 });

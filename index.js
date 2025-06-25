@@ -38,6 +38,16 @@ app.post('/hapus', (req, res) => {
   });
 });
 
+// Endpoint GET /hapusdata
+app.get('/hapusdata', (req, res) => {
+  res.json({
+    message: "berhasil",
+    id_setoran: 58,
+    id_user: 3441,
+    id_juz: 30
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server berjalan di http://localhost:${port}`);
 });
